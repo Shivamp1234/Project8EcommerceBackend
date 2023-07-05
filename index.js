@@ -19,7 +19,7 @@ app.use('/products', productsRouter)
 
 app.get("/", (req, res) => {
     console.log("Api is running fine!")
-    res.json({ message: "Hello From Express App" })
+    res.send("Hello")
 })
 
 app.listen(8000, async () => {
